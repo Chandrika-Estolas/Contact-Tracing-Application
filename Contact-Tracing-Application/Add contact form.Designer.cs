@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_contact_form));
             this.AddContact_btn = new System.Windows.Forms.Button();
             this.Female_rbtn = new System.Windows.Forms.RadioButton();
-            this.Name_box = new System.Windows.Forms.TextBox();
+            this.LastName_box = new System.Windows.Forms.TextBox();
             this.Name_label = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.Age_label = new System.Windows.Forms.Label();
@@ -44,6 +44,11 @@
             this.Email_label = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.Back_btn = new System.Windows.Forms.Button();
+            this.GivenName_box = new System.Windows.Forms.TextBox();
+            this.MiddleInitial_box = new System.Windows.Forms.TextBox();
+            this.LastName_label = new System.Windows.Forms.Label();
+            this.GivenName_label = new System.Windows.Forms.Label();
+            this.MiddleInitial_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,13 +80,13 @@
             this.Female_rbtn.Text = "Female";
             this.Female_rbtn.UseVisualStyleBackColor = false;
             // 
-            // Name_box
+            // LastName_box
             // 
-            this.Name_box.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
-            this.Name_box.Location = new System.Drawing.Point(24, 137);
-            this.Name_box.Name = "Name_box";
-            this.Name_box.Size = new System.Drawing.Size(249, 21);
-            this.Name_box.TabIndex = 2;
+            this.LastName_box.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.LastName_box.Location = new System.Drawing.Point(24, 117);
+            this.LastName_box.Name = "LastName_box";
+            this.LastName_box.Size = new System.Drawing.Size(120, 21);
+            this.LastName_box.TabIndex = 2;
             // 
             // Name_label
             // 
@@ -89,7 +94,7 @@
             this.Name_label.BackColor = System.Drawing.Color.Transparent;
             this.Name_label.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
             this.Name_label.ForeColor = System.Drawing.Color.White;
-            this.Name_label.Location = new System.Drawing.Point(21, 111);
+            this.Name_label.Location = new System.Drawing.Point(21, 91);
             this.Name_label.Name = "Name_label";
             this.Name_label.Size = new System.Drawing.Size(47, 16);
             this.Name_label.TabIndex = 3;
@@ -216,13 +221,70 @@
             this.Back_btn.UseVisualStyleBackColor = false;
             this.Back_btn.Click += new System.EventHandler(this.Back_btn_Click);
             // 
+            // GivenName_box
+            // 
+            this.GivenName_box.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.GivenName_box.Location = new System.Drawing.Point(157, 117);
+            this.GivenName_box.Name = "GivenName_box";
+            this.GivenName_box.Size = new System.Drawing.Size(116, 21);
+            this.GivenName_box.TabIndex = 15;
+            // 
+            // MiddleInitial_box
+            // 
+            this.MiddleInitial_box.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.MiddleInitial_box.Location = new System.Drawing.Point(291, 117);
+            this.MiddleInitial_box.Name = "MiddleInitial_box";
+            this.MiddleInitial_box.Size = new System.Drawing.Size(73, 21);
+            this.MiddleInitial_box.TabIndex = 16;
+            // 
+            // LastName_label
+            // 
+            this.LastName_label.AutoSize = true;
+            this.LastName_label.BackColor = System.Drawing.Color.Transparent;
+            this.LastName_label.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F);
+            this.LastName_label.ForeColor = System.Drawing.Color.White;
+            this.LastName_label.Location = new System.Drawing.Point(22, 141);
+            this.LastName_label.Name = "LastName_label";
+            this.LastName_label.Size = new System.Drawing.Size(55, 12);
+            this.LastName_label.TabIndex = 17;
+            this.LastName_label.Text = "Surname";
+            // 
+            // GivenName_label
+            // 
+            this.GivenName_label.AutoSize = true;
+            this.GivenName_label.BackColor = System.Drawing.Color.Transparent;
+            this.GivenName_label.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F);
+            this.GivenName_label.ForeColor = System.Drawing.Color.White;
+            this.GivenName_label.Location = new System.Drawing.Point(155, 141);
+            this.GivenName_label.Name = "GivenName_label";
+            this.GivenName_label.Size = new System.Drawing.Size(72, 12);
+            this.GivenName_label.TabIndex = 18;
+            this.GivenName_label.Text = "Given Name";
+            // 
+            // MiddleInitial_label
+            // 
+            this.MiddleInitial_label.AutoSize = true;
+            this.MiddleInitial_label.BackColor = System.Drawing.Color.Transparent;
+            this.MiddleInitial_label.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8F);
+            this.MiddleInitial_label.ForeColor = System.Drawing.Color.White;
+            this.MiddleInitial_label.Location = new System.Drawing.Point(289, 141);
+            this.MiddleInitial_label.Name = "MiddleInitial_label";
+            this.MiddleInitial_label.Size = new System.Drawing.Size(74, 12);
+            this.MiddleInitial_label.TabIndex = 19;
+            this.MiddleInitial_label.Text = "Middle Initial";
+            // 
             // Add_contact_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImage = global::Contact_Tracing_Application.Properties.Resources.bckgrnd2;
-            this.ClientSize = new System.Drawing.Size(402, 571);
+            this.ClientSize = new System.Drawing.Size(406, 571);
+            this.Controls.Add(this.MiddleInitial_label);
+            this.Controls.Add(this.GivenName_label);
+            this.Controls.Add(this.LastName_label);
+            this.Controls.Add(this.MiddleInitial_box);
+            this.Controls.Add(this.GivenName_box);
             this.Controls.Add(this.Back_btn);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.Email_label);
@@ -235,7 +297,7 @@
             this.Controls.Add(this.Age_label);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.Name_label);
-            this.Controls.Add(this.Name_box);
+            this.Controls.Add(this.LastName_box);
             this.Controls.Add(this.Female_rbtn);
             this.Controls.Add(this.AddContact_btn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -251,7 +313,7 @@
 
         private System.Windows.Forms.Button AddContact_btn;
         private System.Windows.Forms.RadioButton Female_rbtn;
-        private System.Windows.Forms.TextBox Name_box;
+        private System.Windows.Forms.TextBox LastName_box;
         private System.Windows.Forms.Label Name_label;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label Age_label;
@@ -264,5 +326,10 @@
         private System.Windows.Forms.Label Email_label;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button Back_btn;
+        private System.Windows.Forms.TextBox GivenName_box;
+        private System.Windows.Forms.TextBox MiddleInitial_box;
+        private System.Windows.Forms.Label LastName_label;
+        private System.Windows.Forms.Label GivenName_label;
+        private System.Windows.Forms.Label MiddleInitial_label;
     }
 }

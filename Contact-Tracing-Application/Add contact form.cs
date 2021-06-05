@@ -25,6 +25,8 @@ namespace Contact_Tracing_Application
         private void Back_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
+            Contact_Tracer MenuForm = new Contact_Tracer();
+            MenuForm.Show();
         
         }
     }

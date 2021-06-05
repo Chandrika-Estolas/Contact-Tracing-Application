@@ -61,6 +61,7 @@
             this.Find_btn.TabIndex = 1;
             this.Find_btn.Text = "Find contact";
             this.Find_btn.UseVisualStyleBackColor = false;
+            this.Find_btn.Click += new System.EventHandler(this.Find_btn_Click);
             // 
             // About_btn
             // 
@@ -87,7 +88,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing_Application.Properties.Resources.bgrnd;
-            this.ClientSize = new System.Drawing.Size(222, 196);
+            this.ClientSize = new System.Drawing.Size(222, 177);
             this.Controls.Add(this.Help_btn);
             this.Controls.Add(this.About_btn);
             this.Controls.Add(this.Find_btn);

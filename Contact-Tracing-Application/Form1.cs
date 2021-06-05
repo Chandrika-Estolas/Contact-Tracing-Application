@@ -33,8 +33,15 @@ namespace Contact_Tracing_Application
         private void Add_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Add_contact_form Addform = new Add_contact_form();
-            Addform.Show();
+            Add_contact_form AddContactForm = new Add_contact_form();
+            AddContactForm.Show();
+        }
+
+        private void Find_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Find_Contact_form FindContactForm = new Find_Contact_form();
+            FindContactForm.Show();
         }
     }
 }
