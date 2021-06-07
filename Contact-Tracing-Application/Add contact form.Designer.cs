@@ -33,23 +33,24 @@
             this.Female_rbtn = new System.Windows.Forms.RadioButton();
             this.LastName_box = new System.Windows.Forms.TextBox();
             this.Name_label = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.Age = new System.Windows.Forms.NumericUpDown();
             this.Age_label = new System.Windows.Forms.Label();
-            this.Sex_label = new System.Windows.Forms.Label();
+            this.Gender_label = new System.Windows.Forms.Label();
             this.Male_rbtn = new System.Windows.Forms.RadioButton();
             this.Address_label = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Address_box = new System.Windows.Forms.TextBox();
             this.Contact_label = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ContactN_box = new System.Windows.Forms.TextBox();
             this.Email_label = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Email_box = new System.Windows.Forms.TextBox();
             this.Back_btn = new System.Windows.Forms.Button();
             this.GivenName_box = new System.Windows.Forms.TextBox();
             this.MiddleInitial_box = new System.Windows.Forms.TextBox();
             this.LastName_label = new System.Windows.Forms.Label();
             this.GivenName_label = new System.Windows.Forms.Label();
             this.MiddleInitial_label = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.Help_btn = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Age)).BeginInit();
             this.SuspendLayout();
             // 
             // AddContact_btn
@@ -100,13 +101,13 @@
             this.Name_label.TabIndex = 3;
             this.Name_label.Text = "Name";
             // 
-            // numericUpDown1
+            // Age
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
-            this.numericUpDown1.Location = new System.Drawing.Point(24, 199);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 21);
-            this.numericUpDown1.TabIndex = 4;
+            this.Age.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.Age.Location = new System.Drawing.Point(24, 199);
+            this.Age.Name = "Age";
+            this.Age.Size = new System.Drawing.Size(120, 21);
+            this.Age.TabIndex = 4;
             // 
             // Age_label
             // 
@@ -120,17 +121,17 @@
             this.Age_label.TabIndex = 5;
             this.Age_label.Text = "Age";
             // 
-            // Sex_label
+            // Gender_label
             // 
-            this.Sex_label.AutoSize = true;
-            this.Sex_label.BackColor = System.Drawing.Color.Transparent;
-            this.Sex_label.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
-            this.Sex_label.ForeColor = System.Drawing.Color.White;
-            this.Sex_label.Location = new System.Drawing.Point(21, 243);
-            this.Sex_label.Name = "Sex_label";
-            this.Sex_label.Size = new System.Drawing.Size(32, 16);
-            this.Sex_label.TabIndex = 6;
-            this.Sex_label.Text = "Sex";
+            this.Gender_label.AutoSize = true;
+            this.Gender_label.BackColor = System.Drawing.Color.Transparent;
+            this.Gender_label.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.Gender_label.ForeColor = System.Drawing.Color.White;
+            this.Gender_label.Location = new System.Drawing.Point(21, 243);
+            this.Gender_label.Name = "Gender_label";
+            this.Gender_label.Size = new System.Drawing.Size(58, 16);
+            this.Gender_label.TabIndex = 6;
+            this.Gender_label.Text = "Gender";
             // 
             // Male_rbtn
             // 
@@ -158,13 +159,13 @@
             this.Address_label.TabIndex = 8;
             this.Address_label.Text = "Address";
             // 
-            // textBox1
+            // Address_box
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
-            this.textBox1.Location = new System.Drawing.Point(24, 345);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(348, 21);
-            this.textBox1.TabIndex = 9;
+            this.Address_box.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.Address_box.Location = new System.Drawing.Point(24, 345);
+            this.Address_box.Name = "Address_box";
+            this.Address_box.Size = new System.Drawing.Size(348, 21);
+            this.Address_box.TabIndex = 9;
             // 
             // Contact_label
             // 
@@ -178,13 +179,13 @@
             this.Contact_label.TabIndex = 10;
             this.Contact_label.Text = "Contact Number";
             // 
-            // textBox2
+            // ContactN_box
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
-            this.textBox2.Location = new System.Drawing.Point(24, 407);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(249, 21);
-            this.textBox2.TabIndex = 11;
+            this.ContactN_box.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.ContactN_box.Location = new System.Drawing.Point(24, 407);
+            this.ContactN_box.Name = "ContactN_box";
+            this.ContactN_box.Size = new System.Drawing.Size(249, 21);
+            this.ContactN_box.TabIndex = 11;
             // 
             // Email_label
             // 
@@ -198,13 +199,13 @@
             this.Email_label.TabIndex = 12;
             this.Email_label.Text = "Email";
             // 
-            // textBox3
+            // Email_box
             // 
-            this.textBox3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
-            this.textBox3.Location = new System.Drawing.Point(24, 468);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(279, 21);
-            this.textBox3.TabIndex = 13;
+            this.Email_box.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.Email_box.Location = new System.Drawing.Point(24, 468);
+            this.Email_box.Name = "Email_box";
+            this.Email_box.Size = new System.Drawing.Size(279, 21);
+            this.Email_box.TabIndex = 13;
             // 
             // Back_btn
             // 
@@ -273,6 +274,16 @@
             this.MiddleInitial_label.TabIndex = 19;
             this.MiddleInitial_label.Text = "Middle Initial";
             // 
+            // Help_btn
+            // 
+            this.Help_btn.Location = new System.Drawing.Point(-1, -2);
+            this.Help_btn.Name = "Help_btn";
+            this.Help_btn.Size = new System.Drawing.Size(53, 23);
+            this.Help_btn.TabIndex = 20;
+            this.Help_btn.Text = "?";
+            this.Help_btn.UseVisualStyleBackColor = true;
+            this.Help_btn.Click += new System.EventHandler(this.Help_btn_Click);
+            // 
             // Add_contact_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,22 +291,23 @@
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImage = global::Contact_Tracing_Application.Properties.Resources.bckgrnd2;
             this.ClientSize = new System.Drawing.Size(406, 571);
+            this.Controls.Add(this.Help_btn);
             this.Controls.Add(this.MiddleInitial_label);
             this.Controls.Add(this.GivenName_label);
             this.Controls.Add(this.LastName_label);
             this.Controls.Add(this.MiddleInitial_box);
             this.Controls.Add(this.GivenName_box);
             this.Controls.Add(this.Back_btn);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.Email_box);
             this.Controls.Add(this.Email_label);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.ContactN_box);
             this.Controls.Add(this.Contact_label);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Address_box);
             this.Controls.Add(this.Address_label);
             this.Controls.Add(this.Male_rbtn);
-            this.Controls.Add(this.Sex_label);
+            this.Controls.Add(this.Gender_label);
             this.Controls.Add(this.Age_label);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.Age);
             this.Controls.Add(this.Name_label);
             this.Controls.Add(this.LastName_box);
             this.Controls.Add(this.Female_rbtn);
@@ -303,7 +315,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Add_contact_form";
             this.Text = "Contact Tracer";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Age)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,21 +327,22 @@
         private System.Windows.Forms.RadioButton Female_rbtn;
         private System.Windows.Forms.TextBox LastName_box;
         private System.Windows.Forms.Label Name_label;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown Age;
         private System.Windows.Forms.Label Age_label;
-        private System.Windows.Forms.Label Sex_label;
+        private System.Windows.Forms.Label Gender_label;
         private System.Windows.Forms.RadioButton Male_rbtn;
         private System.Windows.Forms.Label Address_label;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Address_box;
         private System.Windows.Forms.Label Contact_label;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox ContactN_box;
         private System.Windows.Forms.Label Email_label;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Email_box;
         private System.Windows.Forms.Button Back_btn;
         private System.Windows.Forms.TextBox GivenName_box;
         private System.Windows.Forms.TextBox MiddleInitial_box;
         private System.Windows.Forms.Label LastName_label;
         private System.Windows.Forms.Label GivenName_label;
         private System.Windows.Forms.Label MiddleInitial_label;
+        private System.Windows.Forms.Button Help_btn;
     }
 }

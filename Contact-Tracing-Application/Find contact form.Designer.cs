@@ -121,6 +121,7 @@
             this.Help_btn.TabIndex = 21;
             this.Help_btn.Text = "Help";
             this.Help_btn.UseVisualStyleBackColor = true;
+            this.Help_btn.Click += new System.EventHandler(this.Help_btn_Click);
             // 
             // Find_Contact_form
             // 

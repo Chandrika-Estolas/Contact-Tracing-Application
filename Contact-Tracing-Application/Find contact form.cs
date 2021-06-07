@@ -16,5 +16,10 @@ namespace Contact_Tracing_Application
         {
             InitializeComponent();
         }
+
+        private void Help_btn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Input the surname, given name, and middle initial of the contact that you want to find, then click find contact.", "Help");
+        }
     }
 }
