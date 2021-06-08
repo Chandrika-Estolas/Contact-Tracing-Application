@@ -58,7 +58,7 @@
             this.FindContact_btn.ForeColor = System.Drawing.Color.Black;
             this.FindContact_btn.Location = new System.Drawing.Point(354, 100);
             this.FindContact_btn.Name = "FindContact_btn";
-            this.FindContact_btn.Size = new System.Drawing.Size(131, 23);
+            this.FindContact_btn.Size = new System.Drawing.Size(148, 23);
             this.FindContact_btn.TabIndex = 1;
             this.FindContact_btn.Text = "Find Contact";
             this.FindContact_btn.UseVisualStyleBackColor = false;

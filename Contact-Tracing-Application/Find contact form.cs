@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Contact_Tracing_Application
 {
-    public partial class Find_Contact_form: Form
+    public partial class Find_Contact_form : Form
     {
         public Find_Contact_form()
         {
@@ -25,15 +25,28 @@ namespace Contact_Tracing_Application
 
         private void FindContact_btn_Click(object sender, EventArgs e)
         {
-            String FileName = surname_box.Text + GivenName_box.Text + MiddleInitial_box.Text + ".txt";
+            try
+            {
+                String FileName = surname_box.Text + GivenName_box.Text + MiddleInitial_box.Text + ".txt";
 
                 using (StreamReader InputFile = new StreamReader(FileName))
                 {
                     while (!InputFile.EndOfStream)
                     {
-                        Ouput_box.AppendText (InputFile.ReadToEnd());
+                        if (Ouput_box.Text != "")
+                            Ouput_box.Clear();
+                        else
+                        Ouput_box.AppendText(InputFile.ReadToEnd());
                     }
                 }
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("Please make sure that all details are complete and all details are right", "Error");
+            }
+            
+
+            
         }
 
         private void Back_btn_click(object sender, EventArgs e)
