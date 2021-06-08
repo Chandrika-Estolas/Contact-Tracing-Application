@@ -64,7 +64,7 @@ namespace Contact_Tracing_Application
 
         private void Help_btn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("All the information will be added and can be found by clicking the 'find contact' in the menu");
+            MessageBox.Show("All the information will be added and can be found by clicking the 'find contact' in the menu", "?");
         }
     }
     }
